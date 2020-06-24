@@ -35,7 +35,7 @@
             <ion-icon name="globe" item-start aria-hidden="true"></ion-icon>
             <h2>{{ 'core.mainmenu.website' | translate }}</h2>
         </a>
-        <a *ngIf="showHelp" ion-item [href]="docsUrl" core-link autoLogin="no" title="{{ 'core.mainmenu.help' | translate }}">
+        <a *ngIf="showHelp" ion-item [href]="docsUrl" style="display: none;" core-link autoLogin="no" title="{{ 'core.mainmenu.help' | translate }}">
             <ion-icon name="help-buoy" item-start aria-hidden="true"></ion-icon>
             <h2>{{ 'core.mainmenu.help' | translate }}</h2>
         </a>
@@ -43,7 +43,7 @@
             <core-icon name="fa-wrench" item-start></core-icon>
             <h2>{{ 'core.settings.preferences' | translate }}</h2>
         </a>
-                <a ion-item (click)="logout()" title="{{ logoutLabel | translate }}">
+        <a ion-item (click)="logout()" style="display: none;" title="{{ logoutLabel | translate }}">
             <ion-icon name="log-out" item-start aria-hidden="true"></ion-icon>
             <h2>{{ logoutLabel | translate }}</h2>
         </a>
